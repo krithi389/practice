@@ -1,0 +1,65 @@
+body{
+    background:linear-gradient(to right,blue 10%,violet 60%);
+}
+.all{
+    width:40%;
+    height:30%;
+    border: solid, 1px ,white ;
+    background-color: white;
+    margin: auto;
+    margin-top: 10%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.all h1{
+    color:blueviolet;
+
+}
+.all input{
+    width:80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(235, 238, 241);
+    border-radius: 20px;
+    font-size: large;
+}
+.all input::placeholder{
+    font-size: large;
+}
+.all button{
+    width:18%;
+    padding: 10px;
+    border: none;
+    font-size: large;
+    color:white;
+    background-color:green;
+    border-radius: 20px;
+}
+.all div{
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
+.display p{
+    font-size: large;
+}
+.display button{
+    width:18%;
+    padding: 10px;
+    border: none;
+    font-size: large;
+    color:white;
+    background-color:red;
+    border-radius: 20px;
+    position:absolute;
+    right:33%;
+    
+
+  
+}
+.display i{
+    color:red;
+    position:absolute;
+    right:33%;
+}
