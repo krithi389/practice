@@ -1,65 +1,84 @@
 body{
-    background:linear-gradient(to right,blue 10%,violet 60%);
+    background-color:darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.all{
+.top{
     width:40%;
-    height:30%;
-    border: solid, 1px ,white ;
+    height:60%;
     background-color: white;
     margin: auto;
-    margin-top: 10%;
-    padding: 10px;
+    position: relative;
+    top:100px;
+    padding:20px;
     border-radius: 10px;
 }
-.all h1{
+.top h1{
     color:blueviolet;
-
-}
-.all input{
-    width:80%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: rgb(235, 238, 241);
-    border-radius: 20px;
-    font-size: large;
-}
-.all input::placeholder{
-    font-size: large;
-}
-.all button{
-    width:18%;
-    padding: 10px;
-    border: none;
-    font-size: large;
-    color:white;
-    background-color:green;
-    border-radius: 20px;
-}
-.all div{
-    padding-top: 10px;
-    padding-left: 20px;
-
-}
-.display p{
-    font-size: large;
-}
-.display button{
-    width:18%;
-    padding: 10px;
-    border: none;
-    font-size: large;
-    color:white;
-    background-color:red;
-    border-radius: 20px;
-    position:absolute;
-    right:33%;
     
-
+}
+.top a{
+    text-decoration: none;
+}
+.top hr{
+    height: 1.3px;
+    background-color:slategray;
+    border-radius: 2px;
+}
+.top h3{
+    color:crimson
+}
+.seta{
+    width:100%;
+    border: 2px solid slategray;
+    border-radius: 10px;
   
 }
-.display i{
-    color:red;
-    position:absolute;
-    right:33%;
+.setb{
+    width:100%;
+    border: 1px solid slategray;
+    position: relative;
+    top:10px;
+    border: 2px solid slategray;
+    border-radius: 10px;
+    
+}
+.setc{
+    width:100%;
+    border: 1px solid slategray;
+    position: relative;
+    top:20px;
+    border: 2px solid slategray;
+    border-radius: 10px;
+    
+}
+.setd{
+    width:100%;
+    border: 1px solid slategray;
+    position: relative;
+    top:30px;
+    border: 2px solid slategray;
+    border-radius: 10px;
+    
+}
+.top p{
+    color:mediumpurple;
+    font-size: large;
+    padding-left: 10px;
+}
+
+
+.btn{
+    margin: auto;
+    width:10%;
+}
+.btn button{
+      width:160%;
+      padding:6px;
+      font-size: large;
+      color:white;
+      background-color: blue;
+      border-radius: 10px;
+      border: none;
+      margin-top: 60px;
+     
 }

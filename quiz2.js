@@ -1,5 +1,5 @@
 let isAnswered=false
- let score = Number(localStorage.getItem("score")) || 0;
+let score = Number(localStorage.getItem("score")) || 0;
 let seta=document.querySelector(".seta")
 let lettera=document.querySelector(".lettera")
 
@@ -7,18 +7,15 @@ seta.addEventListener("click",function (){
      if (isAnswered) return;
 isAnswered = true;
 
-seta.style.backgroundColor="red"
-    seta.style.borderColor="red"
-    lettera.style.color="white"
-if(seta.style.backgroundColor=="red")
-{
-    setb.style.backgroundColor="green"
-         setb.style.borderColor="green"
-         letterb.style.color="white"
-}
 
-         score+=0   
-         localStorage.setItem("score", score);
+    seta.style.backgroundColor="green"
+         seta.style.borderColor="green"
+         lettera.style.color="white"
+
+     score+=1
+     localStorage.setItem("score", score);  
+     
+
      
 
 })
@@ -28,16 +25,23 @@ let letterb=document.querySelector(".letterb")
 
     setb.addEventListener("click",function (){
          if (isAnswered) return;
-isAnswered = true;
-        setb.style.backgroundColor="green"
-         setb.style.borderColor="green"
+        isAnswered = true;
+        setb.style.backgroundColor="red"
+         setb.style.borderColor="red"
          letterb.style.color="white"
+        
+    if(setb.style.backgroundColor=="red")
+    {
+         seta.style.backgroundColor="green"
+         seta.style.borderColor="green"
+         lettera.style.color="white"
+    }
     
-         score+=1
-         localStorage.setItem("score", score);  
+         score+=0
+         localStorage.setItem("score", score); 
      
          
-})
+    })
 
     let setc=document.querySelector(".setc")
 let letterc=document.querySelector(".letterc")
@@ -51,14 +55,15 @@ isAnswered = true;
 
 if(setc.style.backgroundColor=="red")
 {
-    setb.style.backgroundColor="green"
-         setb.style.borderColor="green"
-         letterb.style.color="white"
+    seta.style.backgroundColor="green"
+         seta.style.borderColor="green"
+         lettera.style.color="white"
 }
 
-         score+=0
+         score+=0 
          localStorage.setItem("score", score);  
      
+    
     
 
     
@@ -76,16 +81,13 @@ isAnswered = true;
 
 if(setd.style.backgroundColor=="red")
 {
-    setb.style.backgroundColor="green"
-         setb.style.borderColor="green"
-         letterb.style.color="white"
+    seta.style.backgroundColor="green"
+         seta.style.borderColor="green"
+         lettera.style.color="white"
 }
-i
-         score+=0
-         localStorage.setItem("score", score);  
+       score+=0
+       localStorage.setItem("score", score);   
      
-   
-    
 
     
 })
