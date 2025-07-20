@@ -1,91 +1,19 @@
-let isAnswered=false
- let score = Number(localStorage.getItem("score")) || 0;
-let seta=document.querySelector(".seta")
-let lettera=document.querySelector(".lettera")
+let fabars=document.querySelector(".fa-bars")
 
-seta.addEventListener("click",function (){
-     if (isAnswered) return;
-isAnswered = true;
+fabars.addEventListener("click",function(){
 
-seta.style.backgroundColor="red"
-    seta.style.borderColor="red"
-    lettera.style.color="white"
-if(seta.style.backgroundColor=="red")
-{
-    setb.style.backgroundColor="green"
-         setb.style.borderColor="green"
-         letterb.style.color="white"
-}
+    let newmenubar=document.querySelector(".newmenubar")
+   newmenubar.style.left="0"
 
-         score+=0   
-         localStorage.setItem("score", score);
-     
-
-})
-
-let setb=document.querySelector(".setb")
-let letterb=document.querySelector(".letterb")
-
-    setb.addEventListener("click",function (){
-         if (isAnswered) return;
-isAnswered = true;
-        setb.style.backgroundColor="green"
-         setb.style.borderColor="green"
-         letterb.style.color="white"
-    
-         score+=1
-         localStorage.setItem("score", score);  
-     
-         
-})
-
-    let setc=document.querySelector(".setc")
-let letterc=document.querySelector(".letterc")
-
-setc.addEventListener("click",function (){
-     if (isAnswered) return;
-isAnswered = true;
-    setc.style.backgroundColor="red"
-    setc.style.borderColor="red"
-    letterc.style.color="white"
-
-if(setc.style.backgroundColor=="red")
-{
-    setb.style.backgroundColor="green"
-         setb.style.borderColor="green"
-         letterb.style.color="white"
-}
-
-         score+=0
-         localStorage.setItem("score", score);  
-     
-    
-
-    
-})
-
-let setd=document.querySelector(".setd")
-let letterd=document.querySelector(".letterd")
-
-setd.addEventListener("click",function (){
-     if (isAnswered) return;
-isAnswered = true;
-    setd.style.backgroundColor="red"
-    setd.style.borderColor="red"
-    letterd.style.color="white"
-
-if(setd.style.backgroundColor=="red")
-{
-    setb.style.backgroundColor="green"
-         setb.style.borderColor="green"
-         letterb.style.color="white"
-}
-i
-         score+=0
-         localStorage.setItem("score", score);  
-     
+   let faxmark=document.querySelector(".fa-xmark")
    
-    
-
-    
+   faxmark.addEventListener("click",function(){
+    newmenubar.style.left="-60%"
+   })
+  
 })
+ 
+
+
+
+
