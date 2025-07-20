@@ -341,7 +341,7 @@ form{
 /* meadia query */
 
 
-@media  screen and (max-width:600px) {
+@media  screen and (max-width:320px) {
     .fa-bars{
         display: block;
     }
